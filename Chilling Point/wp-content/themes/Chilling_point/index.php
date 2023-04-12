@@ -1,0 +1,349 @@
+<?php
+get_header();
+?>
+
+<body>
+	<div class="body-inner">
+
+	<!-- Slider start -->
+	<section id="home" class="no-padding">	
+		<!-- Carousel -->
+    	<div id="main-slide" class="carousel slide" data-ride="carousel">
+    		<div class="overlay"></div>
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  	<li data-target="#main-slide" data-slide-to="0" class="active"></li>
+			    <li data-target="#main-slide" data-slide-to="1"></li>
+			    <li data-target="#main-slide" data-slide-to="2"></li>
+			</ol><!--/ Indicators end-->
+
+			<!-- Carousel inner -->
+			<div class="carousel-inner">
+			    <div class="item active">
+			    	<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/slider2/bg1.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                    		<h2 class="animated2">
+                        		Chilling Point is Now Open!
+                        	</h2>
+                            <h3 class="animated3">
+                            	Check Park Operational Days & Timings to Plan your Visit !
+                            </h3>
+                        </div>
+                    </div>
+			    </div><!--/ Carousel item end -->
+			    <div class="item">
+			    	<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/slider2/bg2.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h2 class="animated4">    
+                            </h2>
+                            <h3 class="animated5">
+                            	Enjoy high-energy slides <br> chilled out attractions <br> great food and drinks <br> in a picturesque location.
+                            </h3>		
+                                 
+                        </div>
+                    </div>
+			    </div><!--/ Carousel item end -->
+			    <div class="item">
+			    	<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/slider2/bg3.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h2 class="animated7">
+                              Our Resort
+                            </h2>
+                            <h3 class="animated8">
+								Whether you are looking for a room only rate or intending to explore or looking to discover our unique experiences
+                            </h3>		
+                                 
+                        </div>
+                    </div>
+			    </div><!--/ Carousel item end -->
+			</div><!-- Carousel inner end-->
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#main-slide" data-slide="prev">
+		    	<span><i class="fa fa-angle-left"></i></span>
+			</a>
+			<a class="right carousel-control" href="#main-slide" data-slide="next">
+		    	<span><i class="fa fa-angle-right"></i></span>
+			</a>
+		</div><!-- /carousel -->    	
+    </section>
+    <!--/ Slider end -->
+
+
+     <!-- Features start -->
+	<section id="service" class="service">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay=".10s">
+					<div class="service-content">
+						<span class="service-image"><img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/pages/service-1.jpg" alt="" /></span>
+						<h3>Amusment Park</h3>
+						<p>
+							The perfect destination for friends and family. 
+							With thrilling indoor and outdoor roller coasters, several of India's first thematic shows & attractions 
+						</p>
+					</div>
+				</div><!--/ End first service -->
+
+				<div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay=".8s" >
+					<div class="service-content">
+						<span class="service-image"><img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/pages/service-2.jpg" alt="" /></span>
+						<h3>Water Park</h3>
+						<p>Feel the adrenaline rush as you twist, swirl and jerk in the craziest, meanest, 
+							spine chilling and heart thumping rides at Water Park. Weak hearts stay away!</p>
+					</div>
+					
+				</div><!--/ End Second features -->
+
+				<div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay="1.1s">
+					<div class="service-content">
+						<span class="service-image"><img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/pages/service-3.jpg" alt="" /></span>
+						<h3>Resort</h3>
+						<p>Resort, is conveniently located within touching distance 
+							to prominent tourist attractions. 
+							Our Resort is perfect destination for a blissful getaway. 
+					</div>
+				</div><!--/ End Third features -->
+
+			</div><!-- Content Row end -->
+		</div><!--/ Container end -->
+	</section><!--/ Features end -->
+
+
+	<!-- About tab start -->
+	<section id="about" class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 heading text-center">
+					<span class="icon-pentagon wow bounceIn"><i class="fa fa-meh-o"></i></span>
+					<h2 class="title2">Facilities Of Chilling Point
+						<span class="title-desc">
+							Stay & Enjoy
+						</span>
+					</h2>
+				</div>
+			</div> <!-- Title row end -->
+
+			<div class="row">
+				<div class="featured-tab clearfix">
+					<ul class="nav nav-tabs nav-stacked col-md-3 col-sm-5">
+					  	<li class="active">
+							  <br>
+					  		<a class="animated fadeIn" href="#tab_a" data-toggle="tab">
+					  			<span class="tab-icon"><i class="fa fa-bank"></i></span>
+					  			<div class="tab-info"><h3>AMUSMENT ATTRACT</h3></div>
+					  		</a>
+					  	</li>
+
+						  <li>
+							<a class="animated fadeIn" href="#tab_c" data-toggle="tab">
+								<span class="tab-icon"><i class="fa fa-bank"></i></span>
+								<div class="tab-info"><h3>WATER ATTRACT</h3></div>
+							</a>
+						</li>
+
+					  	<li>
+						  	<a class="animated fadeIn" href="#tab_b" data-toggle="tab">
+						  		<span class="tab-icon"><i class="fa fa-database"></i></span>
+					  			<div class="tab-info"><h3>PARK TIMINGS</h3></div>
+						  	</a>
+						</li>
+		
+						<li>
+						  	<a class="animated fadeIn" href="#tab_d" data-toggle="tab">
+						  		<span class="tab-icon"><i class="fa fa-language"></i></span>
+					  			<div class="tab-info"><h3>TICKETS / PACKAGES</h3></div>	
+						  	</a>
+						</li>
+						
+					</ul>
+					<div class="tab-content col-md-9 col-sm-7">
+				        <div class="tab-pane active animated fadeInRight" id="tab_a">
+				        	<!-- <img class="img-responsive pull-left" src="images/tab/featured-tab1.png" alt=""> -->
+				            <h3>Our Amusment park has something for everyone</h3> 
+				            
+				            <ul class="check-list">
+				            	<li><i class="fa fa-arrow-circle-right"></i>Unique attractions, for the the first time in India</li>
+				            	<li><i class="fa fa-arrow-circle-right"></i> Indoor AC rides like Deep Space & Rajasaurus</li>
+				            	<li><i class="fa fa-arrow-circle-right"></i> Thematic experiences like Mr. India & I for India</li>
+								<li><i class="fa fa-arrow-circle-right"></i> Outdoor roller coasters & rides</li>
+								<li><i class="fa fa-arrow-circle-right"></i> Restaurants & bars with multiple cuisines</li>
+								<li><i class="fa fa-arrow-circle-right"></i> Shopping & lounge areas</li>
+				            </ul>
+				        </div>
+
+						<div class="tab-pane animated fadeInLeft" id="tab_c">
+				            <!-- <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt=""> -->
+				            <h3>Go With The Flow at Water Park</h3> 
+
+							<ul class="check-list">
+				                <li><i class="fa fa-check"></i> Unique thrills like Loopy Woopy &Swirl Whirl in India</li>
+				                <li><i class="fa fa-check"></i> Group and solo slides & racers </li>
+				                <li><i class="fa fa-check"></i> Wave pool & lazy river </li>
+				                <li><i class="fa fa-check"></i> Shopping & lounge areas </li>
+				                <li><i class="fa fa-check"></i> Restaurants & bars</li>
+				             </ul>
+				        </div>
+
+				        <div class="tab-pane animated fadeInLeft" id="tab_b">
+				            <!-- <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt=""> -->
+				            <h3>PARK TIMINGS & CALENDARS</h3> 
+
+							<ul class="check-list">
+				                <li><i class="fa fa-check"></i> Park timings and ride times are subject to change.</li>
+				                <li><i class="fa fa-check"></i> We have undertaken a Green Initiative to conserve electricity and resources. </li>
+				                <li><i class="fa fa-check"></i> Please check the specific ride operations timings at the Park entrance. </li>
+				                <li><i class="fa fa-check"></i> View the  maintenance schedule and  attraction timings for the season. </li>
+				                <li><i class="fa fa-check"></i> Timings are subject to change - always check at Admissions for up to date information.</li>
+				             </ul>
+				        </div>
+				        
+				        <div class="tab-pane animated fadeIn" id="tab_d">
+				            <h3>Tickets / Packages</h3> 
+							<ul class="check-list">
+				                <li><i class="fa fa-check"></i> Enter your Transaction ID & Phone number used during time of transaction</li>
+				                <li><i class="fa fa-check"></i> Select Preferred Date of Visit</li>
+				                <li><i class="fa fa-check"></i> Click on Download & Email PDF to get confirmation email</li>
+				                <li><i class="fa fa-check"></i> Present it at the park admission counter at the time of entry</li>
+				                <li><i class="fa fa-check"></i> To know more, reach out to us on 022-62552929</li>
+				             </ul>
+				        </div>
+					</div><!-- tab content -->
+	    		</div><!-- Featured tab end -->
+			</div><!-- Content row end -->
+		</div><!-- Container end -->
+    </section><!-- About end -->
+
+    <section id="featured-video" class="featured-video">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="video-embed wow fadeIn" data-wow-duration="1s">
+						<!-- Change the url -->
+						<iframe width="500" height="281" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="video-block-head">
+						<h3>Thrillers at Chilling Point</h3>
+					</div>
+
+					<div class="video-block-content">
+						<span class="feature-icon pull-left" ><i class="fa fa-bicycle"></i></span>
+						<div class="feature-content">
+							<h3>Amusment Park</h3>
+							<p>
+								Thrilling moments of weightlessness will make you feel as if your heart is leaping out on a rainbow. 
+								Catch the panaromic birds eye view of the whole park. 
+								Just remember to mind your head when you are too close to hit the sky!
+							</p>
+						</div>
+					</div><!--/ End 1st block -->
+
+					<div class="video-block-content">
+						<span class="feature-icon pull-left" ><i class="fa fa-diamond"></i></span>
+						<div class="feature-content">
+							<h3>Water Park</h3>
+							<p>
+								Rides like Elephant Safari, Rock n Roll Safari and Serpent Safari, where the riders can slide down to 
+								a short tunnel and are thrown our into a large water pool.
+							</p>
+						</div>
+
+						<!-- <a href="#" class="btn btn-primary solid">See More Video</a> -->
+					</div><!--/ End 1st block -->
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	 <!-- Parallax 2 start -->
+	<section class="parallax parallax1">
+		<div class="parallax-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>Let's Take A Look At Our Most Favourits Attractions</h2>
+					<h3>Just Click Button and Have A Look </h3>
+					<p>
+						<a href="page-gallery.php" class="btn btn-primary white">Amusment</a>
+						<a href="page-gallery.php" class="btn btn-primary solid">Water</a>
+						<a href="page-gallery.php" class="btn btn-primary white">Resort</a>
+					</p>
+				</div>
+			</div>
+		</div><!-- Container end -->
+    </section><!-- Parallax 2 end -->
+
+
+
+	<!-- Team start -->
+	<section id="team" class="team">
+		
+    </section><!--/ Team end -->
+
+
+	<!-- Testimonial start-->
+	<section class="testimonial parallax parallax2">
+		<div class="parallax-overlay"></div>
+	  	<div class="container">
+		    <div class="row">
+			    <div id="testimonial-carousel" class="owl-carousel owl-theme text-center testimonial-slide">
+			        <div class="item">
+			          	<div class="testimonial-thumb">
+			            	<img src="images/team/testimonial1.jpg" alt="testimonial">
+			          	</div>
+			          	<div class="testimonial-content">
+				            <p class="testimonial-text">
+								It was a great experience. 
+								We felt we were in some different world all together. 
+								Everything was fantastic. We loved the parade. 
+								Thanks Chilling Point team for making this so memorable.
+							</p>
+			            	<h3 class="name">Sarah Arevik<span></span></h3>
+			          	</div>
+			        </div>
+			        <div class="item">
+			          	<div class="testimonial-thumb">
+			            	<img src="images/team/testimonial2.jpg" alt="testimonial">
+			          	</div>
+				        <div class="testimonial-content">
+				            <p class="testimonial-text">
+								I am writing this to appreciate all the team members of 
+								Chilling Point who made our day MEMORABLE. 
+								All the arrangements right from getting ticket copies, all the coupons, 
+								snow park arrangements, security, food arrangements everything was just superb!
+							</p>
+				            <h3 class="name">Narek Bedros<span></span></h3>
+				        </div>
+			        </div>
+			        <div class="item">
+				        <div class="testimonial-thumb">
+				            <img src="images/team/testimonial3.jpg" alt="testimonial">
+				        </div>
+			          	<div class="testimonial-content">
+				            <p class="testimonial-text">
+								Thanks for a fantastic & great experience. We thoroughly enjoyed with friends. 
+								It was one of the most amazing holidays they had in a long time. 
+								The kids loved the place & wish to go back every day.
+							</p>
+			            	<h3 class="name">Taline Lucine<span></span></h3>
+			          	</div>
+			        </div>
+			    </div><!--/ Testimonial carousel end-->
+		    </div><!--/ Row end-->
+	  	</div><!--/  Container end-->
+	</section><!--/ Testimonial end-->
+<br>
+<br>
+	<div class="" id="map">
+	</div>
+
+<?php
+get_footer();
+?>

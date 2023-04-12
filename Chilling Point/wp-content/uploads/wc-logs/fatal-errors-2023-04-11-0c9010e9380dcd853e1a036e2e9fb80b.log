@@ -1,0 +1,62 @@
+2023-04-11T07:48:48+00:00 CRITICAL Uncaught WC_Stripe_Exception: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 60: SSL certificate problem: self-signed certificate in certificate chain
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
+ in C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-api.php:150
+Stack trace:
+#0 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php(405): WC_Stripe_API::request(Array, 'customers/cus_N...', 'GET')
+#1 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-payment-tokens.php(152): WC_Stripe_Customer->get_sources()
+#2 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-payment-tokens.php(130): WC_Stripe_Payment_Tokens->woocommerce_get_customer_payment_tokens_legacy(Array, 1, 'stripe')
+#3 C:\xampp\htdocs\Chilling Point\wp-includes\class-wp-hook.php(308): WC_Stripe_Payment_Tokens->woocommerce_get_customer_payment_tokens(Array, 1, 'stripe')
+#4 C:\xampp\htdocs\Chilling Point\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\class-wc-payment-tokens.php(88): apply_filters('woocommerce_get...', Array, 1, 'stripe')
+#6 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-payment-gateway.php(163): WC_Payment_Tokens::get_customer_tokens(1, 'stripe')
+#7 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-payment-gateway.php(480): WC_Payment_Gateway->get_tokens()
+#8 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-gateway-stripe.php(231): WC_Payment_Gateway->saved_payment_methods()
+#9 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\templates\checkout\payment-method.php(30): WC_Gateway_Stripe->payment_fields()
+#10 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\templates\checkout\payment.php(30): wc_get_template('checkout/paymen...', Array)
+#12 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2379): wc_get_template('checkout/paymen...', Array)
+#14 C:\xampp\htdocs\Chilling Point\wp-includes\class-wp-hook.php(308): woocommerce_checkout_payment('')
+#15 C:\xampp\htdocs\Chilling Point\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#16 C:\xampp\htdocs\Chilling Point\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#17 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\templates\checkout\form-checkout.php(59): do_action('woocommerce_che...')
+#18 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(316): wc_get_template('checkout/form-c...', Array)
+#20 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#21 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#22 C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#23 C:\xampp\htdocs\Chilling Point\wp-includes\shortcodes.php(355): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#24 [internal function]: do_shortcode_tag(Array)
+#25 C:\xampp\htdocs\Chilling Point\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#26 C:\xampp\htdocs\Chilling Point\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_ch...')
+#27 C:\xampp\htdocs\Chilling Point\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#28 C:\xampp\htdocs\Chilling Point\wp-content\themes\hotelmaster\include\function\gdlr-utility.php(30): apply_filters('the_content', '<!-- wp:shortco...')
+#29 C:\xampp\htdocs\Chilling Point\wp-content\themes\hotelmaster\single\content-page.php(5): gdlr_content_filter('<!-- wp:shortco...', true)
+#30 C:\xampp\htdocs\Chilling Point\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#31 C:\xampp\htdocs\Chilling Point\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', false, Array)
+#32 C:\xampp\htdocs\Chilling Point\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#33 C:\xampp\htdocs\Chilling Point\wp-content\themes\hotelmaster\page.php(51): get_template_part('single/content', 'page')
+#34 C:\xampp\htdocs\Chilling Point\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#35 C:\xampp\htdocs\Chilling Point\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#36 C:\xampp\htdocs\Chilling Point\index.php(17): require('C:\\xampp\\htdocs...')
+#37 {main}
+  thrown in C:\xampp\htdocs\Chilling Point\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-api.php on line 150
+

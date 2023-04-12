@@ -1,0 +1,112 @@
+/*
+
+    The following CSS codes are created by the YellowPencil plugin.
+    https://yellowpencil.waspthemes.com/
+
+
+    T A B L E   O F   C O N T E N T S
+    ........................................................................
+
+    01. "Cart" Page
+    02. "Checkout" Page
+    03. "Homepage" Page
+
+*/
+
+
+
+/*-----------------------------------------------*/
+/*  "Cart" Page                                  */
+/*-----------------------------------------------*/
+body.page-id-36 .cart_totals .woocommerce-shipping-totals th{
+	-webkit-transform:translatex(8px) translatey(0px);	-ms-transform:translatex(8px) translatey(0px);	transform:translatex(8px) translatey(0px);
+}
+
+body.page-id-36 .cart_totals .shop_table tbody .woocommerce-shipping-totals th{
+	display:none;
+}
+
+body.page-id-36 .woocommerce-shipping-totals td strong{
+	display:none;
+	-webkit-transform:translatex(8px) translatey(0px) !important;	-ms-transform:translatex(8px) translatey(0px) !important;	transform:translatex(8px) translatey(0px) !important;
+}
+
+body.page-id-36 .woocommerce-shipping-totals td a{
+	display:none !important;
+}
+
+body.page-id-36 #shipping_method li label{
+	display:none !important;
+}
+
+body.page-id-36 .woocommerce-shipping-totals td .woocommerce-shipping-destination{
+	display:none;
+}
+
+
+
+/*-----------------------------------------------*/
+/*  "Checkout" Page                              */
+/*-----------------------------------------------*/
+body.page-id-38 #customer_details .woocommerce-shipping-fields{
+	display:none;
+}
+
+body.page-id-38 #order_comments_field label{
+	display:none;
+}
+
+body.page-id-38 #order_comments{
+	display:none;
+}
+
+body.page-id-38 .woocommerce-checkout-review-order-table .woocommerce-shipping-totals th{
+	display:none;
+}
+
+body.page-id-38 .woocommerce-checkout-review-order-table .woocommerce-shipping-totals td{
+	display:none;
+}
+
+body.page-id-38 .gdlr-header-solid .woocommerce-form-coupon-toggle .woocommerce-info{
+	-webkit-transform:translatex(0px) translatey(0px);	-ms-transform:translatex(0px) translatey(0px);	transform:translatex(0px) translatey(0px);
+	display:none;
+}
+
+body.page-id-38 .woocommerce-table--order-details tfoot th{
+	display:none;
+}
+
+body.page-id-38 .woocommerce-table--order-details tfoot tr td{
+	display:none;
+}
+
+body.page-id-38 .woocommerce-order .woocommerce-customer-details .woocommerce-columns--addresses{
+	-webkit-transform:translatex(0px) translatey(0px);	-ms-transform:translatex(0px) translatey(0px);	transform:translatex(0px) translatey(0px);
+	display:none;
+}
+
+
+
+/*-----------------------------------------------*/
+/*  "Homepage" Page                              */
+/*-----------------------------------------------*/
+body.page-id-3720 .with-sidebar-wrapper .service-with-image-content p{
+	display:none;
+}
+
+body.page-id-3720 #gdlr-parallax-wrapper-1 .six .service-with-image-content-wrapper{
+	display:none;
+}
+
+body.page-id-3720 #gdlr-parallax-wrapper-1 .six img{
+	display:none;
+}
+
+body.page-id-3720 .gdlr-gallery-item .gdlr-gallery-thumbnail img{
+	display:none !important;
+}
+
+body.page-id-3720 .with-sidebar-wrapper .twelve .gdlr-gallery-item{
+	-webkit-transform:translatex(-7px) translatey(0px);	-ms-transform:translatex(-7px) translatey(0px);	transform:translatex(-7px) translatey(0px);
+}
